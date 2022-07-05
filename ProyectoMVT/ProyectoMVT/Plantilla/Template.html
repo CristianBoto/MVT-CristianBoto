@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatosFamiliaMVT</title>
+</head>
+<body>
+     <h1 style="color:mediumspringgreen"> <u>HIJO</u> </h1>
+     <br> #Nombre1={{nombre1}} </br>
+     <br> #Apellido= Perez </br>
+     <br> #Email= juliperez@gmail.com </br>
+     <br> #Cursando= Colegio Secundario </br>
+     
+     <h2 style="color:black"> <u>NOTAS DEL BOLETIN DE ALUMNO:{{nombre1}}</u> </h2>
+     {% for nota in lista %}
+     {% if nota < 5 %}
+     <p style="color:red"> DESAPROBADO={{nota}}</p>
+     {% else %} <p style="color:green"> APROBADO={{nota}}</p>
+     {% endif %}
+
+     {% endfor %}
+     
+    <br>                             </br>
+    <h2 style="color:black"> <u>PROMEDIO DEL BOLETIN DE ALUMNO: {{nombre1}}</u> </h2>
+    Promedio notas del boletin={{promedio}}
+     
+    
+
+     <br>                             </br>
+
+     <h3 style="color:dodgerblue" > <u>PAPA</u> </h3>
+     <br> #Nombre2={{nombre2}} </br>
+     <br> #Apellido= Perez </br>
+     <br> #Email= juanroman@gmail.com </br>
+     <br> #Profesion= Medico </br>
+     <br> #Especializacion= Neumonologo </br>
+
+     <br>                             </br>
+
+      <h4 style="color:fuchsia" > <u>MAMA</u> </h4>
+      <br> #Nombre3={{nombre3}} </br>
+      <br> #Apellido= Corol </br>
+      <br> #Email= perlitacorol@gmail.com </br>
+      <br> #Profesion= Abogada </br>
+      <br> #Especializacion= Penalista </br>
+</body>
+</html>
